@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+	margin: 5px;
+	text-align: center;
+}
+body {
+	font-family: Georgia;
+
+	color: mediumvioletred;
+}
+li {
+	list-style: none;
+}
+input {
+	outline: none;
+}
+input:focus {
+	background-color: rgba(255, 255, 255, 0.7);
+	border: 2px solid mediumvioletred;
+}
+.box {
+	padding: 5px;
+	border: 2px dotted darkslateblue;
+	background-color: lightblue;
+	height: auto;
+
+	color: black;
+}
+
+h1 {
+	text-align: center;
+}
+button {
+	background: lightblue;
+	border: 2px solid darkslateblue;
+	font-size: 1rem;
+}
+button:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+button:active {
+	transform: translateY(3px);
+}
