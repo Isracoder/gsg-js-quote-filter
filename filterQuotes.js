@@ -2,7 +2,7 @@ let div = document.querySelector(".box");
 let quotes = [];
 let arr = [];
 getQuotes();
-
+let apost = '’' ;
 function main() {
   
   if (typeof document !== "undefined") {
@@ -17,9 +17,10 @@ function main() {
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         let value = input.value;
+        // the apostrophe used in the quotes is different from the keyboard apostrophe
         let newArr = [];
         quotes["quotes"].forEach((obj) => {
-          if (obj.quote.toLowerCase().includes(value.toLowerCase())) {
+          if (obj.quote.toLowerCase().includes(value.toLowerCase()) || obj.quote.toLowerCase().includes(value.replace(/\'/g , apost))) {
             newArr.push(obj.quote + "- " + obj.author);
           }
         });
