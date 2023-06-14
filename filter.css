@@ -2,14 +2,20 @@
 	box-sizing: border-box;
 	margin: 5px;
 	text-align: center;
+	padding: 3px;
 }
 body {
 	font-family: Georgia;
 
 	color: mediumvioletred;
 }
+ul {
+	padding: 5px;
+}
 li {
 	list-style: none;
+	margin: 10px;
+	padding: 5px;
 }
 input {
 	outline: none;
